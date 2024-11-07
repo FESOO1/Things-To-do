@@ -200,4 +200,5 @@ body {
 .output-itself-paragraph {
     color: white;
     font-weight: 300;
+    padding-inline: 10px;
 }
