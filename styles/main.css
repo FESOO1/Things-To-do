@@ -170,6 +170,10 @@ body {
     display: none;
 }
 
+.output-itself-check-button:hover .output-itself-check-button-svg {
+    color: rgb(69, 255, 2);
+}
+
 .output-itself-delete-button {
     display: flex;
     justify-content: center;
