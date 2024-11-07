@@ -20,6 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    row-gap: 50px;
 }
 
 /* INPUT */
@@ -109,4 +110,83 @@ body {
 
 .input-drop-down-menu:hover {
     background-color: rgb(25,24,26);
+}
+
+/* OUTPUT */
+
+.output {
+    width: 100%;
+    padding-inline: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.output-itself {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    background: linear-gradient(25deg, rgb(22,22,22), rgb(18, 18, 18), rgb(22,22,22));
+    padding: 10px;
+    border-radius: 0.4rem;
+    border: 1px solid rgba(255,255,255,0.01);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.output-itself-buttons-container {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.output-itself-buttons-container-divider {
+    border: 0;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.output-itself-check-button {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgb(16,16,17);
+    border: 1px solid rgba(255,255,255,0.08);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.output-itself-check-button-svg,
+.output-itself-check-button-svg-second {
+    color: white;
+    width: 20px;
+    height: 20px;
+}
+
+.output-itself-check-button-svg-second {
+    display: none;
+}
+
+.output-itself-delete-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.1);
+    background-color: rgb(13, 11, 11);
+    cursor: pointer;
+}
+
+.output-itself-delete-button-svg {
+    color: white;
+    width: 18px;
+    height: 18px;
+}
+
+.output-itself-delete-button:hover .output-itself-delete-button-svg {
+    color: red;
 }
