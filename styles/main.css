@@ -4,6 +4,77 @@
     --f-all: "Mona Sans", sans-serif;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--f-all);
+}
+
 body {
     background-color: rgb(16,16,17);
+}
+
+.container {
+    padding-block: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* INPUT */
+
+.input {
+    width: 500px;
+    height: 50px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr auto;
+    background-color: rgb(21,20,22);
+    border-top: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(255,255,255,0.01);
+    column-gap: 15px;
+    padding-right: 5px;
+}
+
+.input-itself {
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    padding-left: 15px;
+    font-size: 1rem;
+    color: white;
+}
+
+.input-button {
+    width: 40px;
+    height: 40px;
+    border: 0;
+    outline: none;
+    border-radius: 0.3rem;
+    background-color: rgb(28,27,29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.03);
+    border-bottom: 1px solid rgba(255,255,255,0.02);
+    cursor: pointer;
+    transition: background-color 200ms;
+}
+
+.input-button-svg {
+    color: white;
+    width: 20px;
+    height: 20px;
+    transition: scale 200ms;
+}
+
+.input-button:hover {
+    background-color: rgb(35,34,36);
+}
+
+.input-button:active .input-button-svg {
+    scale: 0.8;
 }
