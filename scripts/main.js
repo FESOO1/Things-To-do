@@ -65,7 +65,7 @@ function getDataFromLocalStorage(){
 
     if (todoItself) {
         for (let i = 0; i < todoItself.length; i++) {
-
+            
         };
     };
 };
