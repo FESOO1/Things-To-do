@@ -67,7 +67,7 @@ inputButton.addEventListener('click', e => {
                 </button>
             </div>
             <hr class="output-itself-divider">
-            <p class="output-itself-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius mollitia dolore saepe adipisci! Commodi sed deserunt iure, consequuntur adipisci delectus cumque harum. Ipsam ducimus praesentium maiores, delectus repellat odit repudiandae?</p>
+            <p class="output-itself-paragraph"></p>
         </div>
     `;
 
@@ -102,7 +102,7 @@ inputButton.addEventListener('click', e => {
         });
 
         outputDeleteButtons[i].addEventListener('click', () => {
-            
+            outputContainer.removeChild(outputItself[i]);
         });
     };
 });
