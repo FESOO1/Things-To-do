@@ -127,6 +127,7 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 4px;
+    row-gap: 15px;
     background: linear-gradient(25deg, rgb(22,22,22), rgb(18, 18, 18), rgb(22,22,22));
     padding: 10px;
     border-radius: 0.4rem;
@@ -189,4 +190,14 @@ body {
 
 .output-itself-delete-button:hover .output-itself-delete-button-svg {
     color: red;
+}
+
+.output-itself-divider {
+    border: 0;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.output-itself-paragraph {
+    color: white;
+    font-weight: 300;
 }
