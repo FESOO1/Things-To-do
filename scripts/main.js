@@ -67,7 +67,7 @@ inputButton.addEventListener('click', e => {
                 </button>
             </div>
             <hr class="output-itself-divider">
-            <p class="output-itself-paragraph"></p>
+            <p class="output-itself-paragraph">${inputItself.value}</p>
         </div>
     `;
 
