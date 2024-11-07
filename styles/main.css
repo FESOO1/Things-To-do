@@ -135,6 +135,20 @@ body {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
+.output-itself-checked > .output-itself-buttons-container > .output-itself-check-button > .output-itself-check-button-svg {
+    display: none;
+}
+
+.output-itself-checked > .output-itself-buttons-container > .output-itself-check-button > .output-itself-check-button-svg-second {
+    display: unset;
+    color: rgb(255, 255, 255);
+}
+
+.output-itself-checked > .output-itself-paragraph {
+    text-decoration: line-through;
+    color: rgb(150, 150, 150);
+}
+
 .output-itself-buttons-container {
     display: grid;
     grid-template-columns: auto 1fr auto;
@@ -161,7 +175,7 @@ body {
 
 .output-itself-check-button-svg,
 .output-itself-check-button-svg-second {
-    color: white;
+    color: rgb(146, 146, 146);
     width: 20px;
     height: 20px;
 }
@@ -171,7 +185,7 @@ body {
 }
 
 .output-itself-check-button:hover .output-itself-check-button-svg {
-    color: rgb(69, 255, 2);
+    color: rgb(255, 255, 255);
 }
 
 .output-itself-delete-button {
