@@ -2,6 +2,7 @@ const inputButton = document.querySelector('.input-button');
 const inputContainer = document.querySelector('.input');
 const inputItself = document.querySelector('.input-itself');
 const outputContainer = document.querySelector('.output');
+const todosArray = [];
 
 // 
 
@@ -38,7 +39,28 @@ inputButton.addEventListener('click', e => {
                 </button>
             </div>
             <hr class="output-itself-divider">
-            <p class="output-itself-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius mollitia dolore saepe adipisci! Commodi sed deserunt iure, consequuntur adipisci delectus cumque harum. Ipsam ducimus praesentium maiores, delectus repellat odit repudiandae?</p>
+            <p class="output-itself-paragraph">${inputItself.value}</p>
         </div>
     `;
+
+    // STORING THE INPUT'S VALUE IN THE ARRAY
+    todosArray.push(inputItself.value);
+
+    // STORING THE ARRAY THAT CONTAINS ALL THE VALUES IN THE LOCAL STORAGE
+    localStorage.setItem('todo', JSON.stringify(todosArray));
+
+    // RESETING THE INPUT
+    inputItself.value = '';
 });
+
+// USING THE LOCAL STORAGE
+
+function getDataFromLocalStorage(){
+    const todoItself = JSON.parse(localStorage.getItem('todo'));
+
+    if (todoItself) {
+        for (let i = 0; i < todoItself.length; i++) {
+            
+        };
+    };
+};
