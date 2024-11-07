@@ -1,0 +1,80 @@
+.body-light-mode {
+    background: url(https://img3.wallspic.com/previews/7/3/3/9/7/179337/179337-8k_nature-nature-tablet-water-water_resources-x750.jpg) no-repeat;
+    background-size: cover;
+    background-repeat: center;
+    position: relative;
+}
+
+.body-light-mode::before {
+    content: '';
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    z-index: -1;
+}
+
+.body-light-mode > .container > .input-container > .input {
+    background-color: #fcfcfc22;
+    /* border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(0,0,0,0.08); */
+}
+
+.body-light-mode .output-itself-check-button {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.body-light-mode .output-itself-check-button-svg,
+.body-light-mode .output-itself-check-button-svg-second {
+    color: black !important;
+}
+
+.body-light-mode .output-itself-delete-button {
+    background-color: #fcfcfc79;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.body-light-mode .output-itself-delete-button-svg {
+    color: black;
+}
+
+.body-light-mode .input-button {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.body-light-mode .input-button-svg {
+    color: black;
+}
+
+.body-light-mode > .container > .output > .output-itself {
+    background: linear-gradient(25deg, rgb(226, 226, 226), rgb(255, 255, 255), rgb(226, 226, 226));
+}
+
+.body-light-mode .output-itself-buttons-container-divider,
+.body-light-mode .output-itself-divider {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.body-light-mode .output-itself-paragraph {
+    color: black;
+    font-weight: 400;
+}
+
+.body-light-mode .output-itself-checked > .output-itself-paragraph {
+    text-decoration: line-through;
+    color: rgb(150, 150, 150);
+    font-weight: 400;
+}
+
+.body-light-mode .theme-button {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.body-light-mode .theme-button-svg,
+.body-light-mode .theme-button-svg-second {
+    color: black !important;
+}
