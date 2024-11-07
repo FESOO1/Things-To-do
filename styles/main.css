@@ -24,6 +24,12 @@ body {
 
 /* INPUT */
 
+.input-container {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
 .input {
     width: 500px;
     height: 50px;
@@ -75,6 +81,32 @@ body {
     background-color: rgb(35,34,36);
 }
 
+.input-button:active {
+    background-color: rgb(30,29,31);
+}
+
 .input-button:active .input-button-svg {
     scale: 0.8;
+}
+
+.input:hover {
+    background-color: rgb(25,24,26);
+}
+
+/* INPUT DROPDOWN MENU */
+
+.input-drop-down-menu {
+    height: 50px;
+    border: 0;
+    background-color: transparent;
+    background-color: rgb(21,20,22);
+    padding-left: 5px;
+    color: white;
+    border-radius: 0.2rem;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(255,255,255,0.01);
+}
+
+.input-drop-down-menu:hover {
+    background-color: rgb(25,24,26);
 }

@@ -8,15 +8,25 @@
 </head>
 <body>
     <div class="container">
-        <div class="input">
-            <input type="text" placeholder="Add a task to do..." class="input-itself">
-            <button class="input-button">
-                <svg class="input-button-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
-                    <path d="M12 4V20M20 12H4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </button>
+        <div class="input-container">
+            <form class="input">
+                <input type="text" placeholder="Add a task to do..." class="input-itself">
+                <button type="submit" class="input-button">
+                    <svg class="input-button-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                        <path d="M12 4V20M20 12H4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </form>
+            <select name="dropDownMenu" id="dropDownMenu" class="input-drop-down-menu">
+                <option class="input-drop-down-menu-option" value="reminder">Reminder</option>
+                <option class="input-drop-down-menu-option" value="checkbox">Checkbox</option>
+            </select>
         </div>
-        <div class="output"></div>
+        <div class="output">
+            <div class="output-itself">
+
+            </div>
+        </div>
     </div>
     
     <script src="./scripts/main.js"></script>
