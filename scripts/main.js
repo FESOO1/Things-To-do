@@ -54,6 +54,8 @@ inputButton.addEventListener('click', e => {
 
     // RESETING THE INPUT
     inputItself.value = '';
+
+    // 
 });
 
 // USING THE LOCAL STORAGE
