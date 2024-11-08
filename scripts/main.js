@@ -170,17 +170,32 @@ function getDataFromLocalStorage(){
             // CHECK BUTTON
 
             for (let i = 0; i < outputItself.length; i++) {
-                const checked = localStorage.getItem('checked');
 
-                if (checked === 'true') {
-                    outputItself[i].classList.add('output-itself-checked');
-                } else {
-                    outputItself[i].classList.remove('output-itself-checked');
-                };
+                // CHECK IF TODOS ARE CHECKED
+                let checked = localStorage.getItem('checked');
+
+                function checkFunction() {
+                    if (checked === 'true') {
+                        outputItself[i].classList.add('output-itself-checked');
+    
+                        localStorage.setItem('checked', checked);
+                    } else {
+                        outputItself[i].classList.remove('output-itself-checked');
+                        
+                        localStorage.setItem('checked', checked);
+                    };
+                }
+
+                outputCheckButtons[i].addEventListener('click', () => {
+                    checkFunction();
+                });
+
+
 
                 // DELETING A TASK
                 outputDeleteButtons[i].addEventListener('click', () => {
                     outputContainer.removeChild(outputItself[i]);
+                    todosArray.pop(todoItself[i]);
                 });
             };
         };
