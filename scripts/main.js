@@ -195,7 +195,7 @@ function getDataFromLocalStorage(){
                 // DELETING A TASK
                 outputDeleteButtons[i].addEventListener('click', () => {
                     outputContainer.removeChild(outputItself[i]);
-                    todosArray.pop(todoItself[i]);
+                    todoItself.pop(todoItself[i]);
                 });
             };
         };
